@@ -182,18 +182,4 @@ for searching books by title/author/category.
 
 ---
 
-## 6. Possible Viva/Presentation Talking Points
 
-- Why a BST for books but a linked list for students? *(Books are frequently
-  searched/sorted by ID; students are typically accessed by direct ID lookup
-  and their count is smaller — a BST would be over-engineering there, though
-  it would also work.)*
-- What happens to BST balance? *(This is a plain/unbalanced BST — worst-case
-  O(n) if IDs are inserted in sorted order. A follow-up improvement would be
-  an AVL or Red-Black tree for guaranteed O(log n).)*
-- Why a stack for undo instead of a list? *(Undo only ever affects the most
-  recently performed action — LIFO order — which is exactly what a stack
-  models.)*
-- How is the fine calculated? *(Difference in calendar days between due date
-  and return date, multiplied by a fixed daily rate, using C's `time.h`
-  functions.)*
